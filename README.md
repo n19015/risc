@@ -6,4 +6,4 @@ pythonで作成しています。
 
 **isiken.py**
 
-じゃんけんのスクリプト。while Trueで書いています、やめるときはCl+c。
+じゃんけんのスクリプト。while Trueで書いています、やめるときはCtrl+c。
