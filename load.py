@@ -1,6 +1,4 @@
-import sys
-import time
-import threading
+import sys, time, threading
 
 
 lis = ['-', '\\', '|', '/'] # ギミック
