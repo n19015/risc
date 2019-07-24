@@ -1,8 +1,21 @@
 import sys
 import time
+import threading
+
 
 lis = ['-', '\\', '|', '/'] # ギミック
-while True:
+right = True
+
+
+def fnc(): # 別のスレッドで終了フラグの管理
+    global right
+    time.sleep(5)
+    right = False
+
+
+thread = threading.Thread(target=fnc)
+thread.start()
+while right:
     for num in lis:
         sys.stdout.write("\rNowloading...{}".format(num))
         # printだと強制改行になるのでsysで代用
@@ -10,3 +23,7 @@ while True:
         sys.stdout.flush()
         # バッファリングをしないコード
         time.sleep(0.1)
+
+
+# print("\r\033[Khoge") # ここをアンコメントするとloadingを消しながらprintされる
+# print("\nhoge") # ここをアンコメントするとloadingを残してprintされる
