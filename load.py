@@ -23,5 +23,5 @@ while right:
         time.sleep(0.1)
 
 
-# print("\r\033[Khoge") # ここをアンコメントするとloadingを消しながらprintされる
+print("\r\033[Khoge") # ここをアンコメントするとloadingを消しながらprintされる
 # print("\nhoge") # ここをアンコメントするとloadingを残してprintされる

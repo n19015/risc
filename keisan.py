@@ -1,5 +1,6 @@
 import random
 
+
 def bina():
     a = random.randrange(10, 200)
     b = format(a, 'b')
@@ -7,9 +8,12 @@ def bina():
     print(b)
     c = int(input())
     if a == c:
-        print("sucees")
+        print("correct")
     else:
-        print("not")
+        print("incorrect")
+        print("correct answer is ", end='')
+        print(a)
+
 
 def octo():
     a = random.randrange(10, 200)
@@ -18,9 +22,12 @@ def octo():
     print(b)
     c = int(input())
     if a == c:
-        print("sucess")
+        print("correct")
     else:
-        print("not")
+        print("incorrect")
+        print("correct answer is ", end='')
+        print(a)
+
 
 def hexy():
     a = random.randrange(10, 200)
@@ -29,9 +36,12 @@ def hexy():
     print(b)
     c = int(input())
     if a == c:
-        print("sucess")
+        print("correct")
     else:
-        print("not")
+        print("incorrect")
+        print("correct answer is ", end='')
+        print(a)
+
 
 def ten():
     a = random.randrange(10, 200)
@@ -42,10 +52,12 @@ def ten():
         print(a)
         f = int(input())
         j = str(f)
-        if j  == b:
-            print("sucess")
+        if j == b:
+            print("correct")
         else:
-            print("not")
+            print("incorrect")
+            print("correct answer is ", end='')
+            print(b)
     if e == 2:
         print("\033[1A\r８進数に変換")
         c = format(a, 'o')
@@ -53,18 +65,22 @@ def ten():
         g = int(input())
         k = str(g)
         if c == k:
-            print("sucesse")
+            print("correct")
         else:
-            print("not")
+            print("incorrect")
+            print("correct answer is ", end='')
+            print(c)
     if e == 3:
         print("\033[1A\r１６進数に変換")
         d = format(a, 'x')
         print(a)
         h = (input())
         if d == h:
-            print("sucesse")
+            print("correct")
         else:
-            print("not")
+            print("incorrect")
+            print("correct answer is ", end='')
+            print(d)
 
 print("２進数：１　８進数：２ １６進数：３ １０進数：４")
 num = int(input())
