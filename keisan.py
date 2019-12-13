@@ -1,6 +1,5 @@
 import random
 
-
 def bina():
     a = random.randrange(10, 200)
     b = format(a, 'b')
@@ -13,7 +12,6 @@ def bina():
         print("incorrect")
         print("correct answer is ", end='')
         print(a)
-
 
 def octo():
     a = random.randrange(10, 200)
@@ -28,7 +26,6 @@ def octo():
         print("correct answer is ", end='')
         print(a)
 
-
 def hexy():
     a = random.randrange(10, 200)
     b = format(a, 'x')
@@ -41,7 +38,6 @@ def hexy():
         print("incorrect")
         print("correct answer is ", end='')
         print(a)
-
 
 def ten():
     a = random.randrange(10, 200)
