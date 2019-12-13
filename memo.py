@@ -1,6 +1,5 @@
 import sys
 
-
 def gameframe():
     for i in range(21):
         sys.stdout.write("-")
@@ -13,7 +12,6 @@ def gameframe():
         sys.stdout.write("-")
     print()
 
-
 def iput():
     sys.stdout.write("\033[6A")
     for i in range(5):
@@ -24,8 +22,7 @@ def iput():
             sys.stdout.write("\033[20C")
             sys.stdout.write("\033[K")
             print("|")
-    sys.stdout.write("\033[5B")
-
+    print()
 
 gameframe()
 iput()
